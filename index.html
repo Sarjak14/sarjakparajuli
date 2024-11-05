@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarjak Parajuli</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Main Styles */
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .header img {
+            width: 40px;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            margin-right: 20px;
+        }
+
+        .profile h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        .profile h2 {
+            margin: 5px 0;
+            font-size: 1.2em;
+            color: #f0bc00;
+        }
+
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #2e2e2e;
+            border-radius: 10px;
+        }
+
+        /* Skills Section */
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .skill {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            max-width: 120px;
+        }
+
+        .skill img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+
+        .skill p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+        /* Projects Section */
+        .project-nav {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 20px 0;
+        }
+
+        .project-link {
+            text-decoration: none;
+            color: #e0e0e0;
+        }
+
+        .project-icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #2e2e2e;
+            border-radius: 10px;
+            transition: transform 0.3s, background-color 0.3s;
+            width: 150px;
+            height: 150px;
+            justify-content: center;
+        }
+
+        .project-icon i {
+            font-size: 3em;
+            margin-bottom: 10px;
+            color: #f0a500;
+        }
+
+        .project-icon:hover {
+            transform: translateY(-5px);
+            background-color: #3e3e3e;
+            cursor: pointer;
+        }
+
+        /* Contact Section */
+        .contact-container {
+            display: flex;
+            gap: 40px;
+            justify-content: space-between;
+        }
+
+        .contact-form {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            margin: 10px 0;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #e8bf0b;
+            color: #1e1e1e;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #00e000;
+        }
+
+        .social-links {
+            flex: 1;
+        }
+
+        .social-icons-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .social-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 80px;
+            background-color: #3e3e3e;
+            border-radius: 10px;
+            color: #e0e0e0;
+            text-decoration: none;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .social-icon i {
+            font-size: 2em;
+        }
+
+        .social-icon:hover {
+            transform: translateY(-5px);
+            background-color: #28f000;
+            color: #1e1e1e;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <div class="profile">
+            <img alt="Profile Picture" src="pp.jpg">
+            <div>
+                <h1>Sarjak Parajuli</h1>
+                <h2>Electronics, Communication and Information Engineering Student</h2>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>About</h2>
+            <p>Hi, I am Sarjak Parajuli. Currently an Electronics and Communication Engineering student at IOE Thapathali Campus.</p>
+        </div>
+
+        <div class="section skills">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <img src="https://cdn-icons-png.flaticon.com/512/8669/8669731.png" alt="Analog Electronics">
+                    <p>Analog Electronics</p>
+                </div>
+                <div class="skill">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3406/3406894.png" alt="Digital Electronics">
+                    <p>Digital Electronics</p>
+                </div>
+                <div class="skill">
+                    <img src="https://cdn-icons-png.flaticon.com/512/897/897368.png" alt="Mathematics">
+                    <p>Mathematics</p>
+                </div>
+                <div class="skill">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2721/2721250.png" alt="Physics">
+                    <p>Physics</p>
+                </div>
+                <div class="skill">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1055/1055683.png" alt="Instrumentation and Control">
+                    <p>Instrumentation and Control</p>
+                </div>
+                <div class="skill">
+                    <img src="https://cdn-icons-png.flaticon.com/512/9675/9675069.png" alt="CMOS and VLSI">
+                    <p>CMOS and VLSI</p>
+                </div>
+                <div class="skill">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2721/2721304.png" alt="Circuit Design and Layout">
+                    <p>Circuit Design and Layout</p>
+                </div>
+                <div class="skill">
+                    <img src="https://cdn-icons-png.flaticon.com/512/4617/4617522.png" alt="Microcontrollers and Microprocessors">
+                    <p>Microcontrollers and Microprocessors</p>
+                </div>
+                <div class="skill">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2103/2103633.png" alt="Machine Learning">
+                    <p>Machine Learning</p>
+                </div>
+                <div class="skill">
+                    <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" alt="C/C++/Python/Assembly">
+                    <p>C/C++/Python/Assembly</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section projects">
+            <h2>Projects</h2>
+            <div class="project-nav">
+                <a href="hardware.html" class="project-link">
+                    <div class="project-icon">
+                        <i class="fas fa-microchip"></i>
+                        <span>Hardware Projects</span>
+                    </div>
+                </a>
+                <a href="software.html" class="project-link">
+                    <div class="project-icon">
+                        <i class="fas fa-laptop-code"></i>
+                        <span>Software Projects</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="section contact">
+            <h2>Contact Me</h2>
+            <div class="contact-container">
+                <div class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send</button>
+                </div>
+                <div class="social-links">
+                    <div class="social-icons-grid">
+                        <a href="https://www.facebook.com/sarjak.parajuli" class="social-icon" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/sarjak14/" class="social-icon" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sarjak-parajuli-a66853279/" class="social-icon" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 Sarjak Parajuli. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>
